@@ -1,0 +1,29 @@
+
+
+
+// Mobile Media Queries For Tablets and above
+@media(min-width:768px){
+  .side-copy {
+    text-align: right;
+    float: left !important;
+}
+
+  .nav {
+    font-size: 16px;
+      li{
+        margin: 0px 0;
+      }
+  }
+}
+// Small Sizes
+@media(max-width:767px){
+
+  .extra-pad{
+  padding-top: 0px;
+  }
+
+
+  //.side-copy {
+   // align: left;
+  //}
+}
