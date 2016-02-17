@@ -24,6 +24,23 @@
   border-color: #000000;
   border-radius: 0px;
   font-size: 2em;
+    a:link{ 
+      color: $white !important;
+      font-weight: normal;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
 }
 
 #lay1 {
@@ -43,41 +60,18 @@
         text-align: center;
 }
 
-h1 {
-	font-family: $serif-font-family;
+a {
+  font-family: $serif-font-family;
   font-style: italic;
   font-weight: normal !important;
-  font-size: 3em !important;
+  font-size: 1em !important;
   line-height: 1.2em;
   letter-spacing: 0.06em;
   color: $black !important;
   text-align: center !important;
-}
-
-h2 {
-	font-family: $serif-font-family;
-  font-style: italic;
-  text-decoration: line-through;
-  font-weight: normal !important;
-  font-size: 3em !important;
-  line-height: 1.2em;
-  letter-spacing: 0.06em;
-  color: $black !important;
-  text-align: center !important;
-}
-
-h3 {
-	font-family: $serif-font-family;
-    font-size: 16px !important;
-    line-height: 1.2em;
-    color: $black !important;
-    font-weight: normal;
-    margin-top: 10px !important;
     a:link{ 
-      color: $lt-grey !important;
-      font-style: italic;
-      font-weight: normal;
-      font-size: 16px !important;
+      color: $black !important;
+      text-decoration: none !important;
     }
     a:hover{ 
       color: $black !important;
@@ -93,33 +87,33 @@ h3 {
     }
 }
 
-h4 {
-	font-family: $reg-font-family;
-    font-size: 16px !important;
-    color: $black !important;
-    font-weight: bold;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-}
 
-h5 {
-	font-family: $reg-font-family;
-    font-size: 4em !important;
-    color: $black !important;
-    font-weight: normal;
-    margin-top: 30% !important;
-    margin-bottom: 10px !important;
-    margin-left: 0px !important;
-}
-
-h6 {
+.main-copy {
 	font-family: $serif-font-family;
-    font-size: 1.3em !important;
-    line-height: 1.3em !important;
-    color: $black !important;
-    opacity: 0.5;
-    font-style: italic;
-    margin-top: 10px !important;
+  font-style: italic;
+  font-weight: normal !important;
+  font-size: 3em !important;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: center !important;
+    a:link{ 
+      color: $black !important;
+      font-weight: normal;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
 }
 
 
