@@ -1,0 +1,127 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+/* -----------------------------------------------------------------------------\
+\
+  NAVBAR\
+  \
+----------------------------------------------------------------------------- */\
+\
+\
+\
+\
+.navbar \{\
+  border: none;\
+  background: $white !important;\
+  display: flex;\
+\}\
+\
+.navbar-brand \{\
+    font-family: $narrow-font-family;\
+    font-size: 26px !important;\
+    color: $black !important; \
+\}\
+\
+.navbar-default .navbar-toggle .icon-bar \{\
+    background-color: $black;\
+\}\
+\
+.nav \{\
+  font-family: 'Darby Sans';\
+  letter-spacing: 0.5px;\
+  font-size: 12px !important;\
+  padding-bottom: 0px !important;\
+  padding-top: 0px !important;\
+    a:hover\{ \
+      color: $black !important; \
+    \}\
+    a:focus\{\
+      color: $black !important;     \
+    \}\
+    a:active\{\
+      color: $black !important;     \
+    \}\
+\}\
+\
+\
+\
+\
+/* -----------------------------------------------------------------------------\
+\
+  NEW ANIMATED 90 degree turn HAMBURGER CLASSES\
+  \
+----------------------------------------------------------------------------- */\
+\
+\
+\
+.navbar-toggle \{\
+  border: none;\
+  background: transparent !important;\
+\
+  &:hover \{\
+    background: transparent !important;\
+  \}\
+\
+  .icon-bar \{\
+    width: 22px;\
+    transition: all 0.2s;\
+  \}\
+  .top-bar \{\
+    -webkit-transform: translateX(6px) translateY(6px) rotateZ(90deg);\
+    -ms-transform: translateX(6px) translateY(6px) rotateZ(90deg);\
+    transform: translateX(6px) translateY(6px) rotateZ(90deg);\
+  \}\
+  .middle-bar \{\
+    -webkit-transform: rotateZ(90deg);\
+    -ms-transform: rotateZ(90deg);\
+    transform: rotateZ(90deg);\
+  \}\
+  .bottom-bar \{\
+    -webkit-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);\
+    -ms-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);\
+    transform: translateX(-6px) translateY(-6px) rotateZ(90deg);\
+  \}\
+\}\
+\
+// Add the \'93default\'94 hamburger styles to fix that. \
+// These get activated and applied by default because the page usually loads \
+// with the menu collapsed and the .collapsed class already added\
+\
+.navbar-toggle.collapsed \{\
+  .top-bar \{\
+    -webkit-transform: rotate(0);\
+    -ms-transform: rotate(0);\
+    transform: rotate(0);\
+  \}\
+  .middle-bar \{\
+    -webkit-transform: rotate(0);\
+    -ms-transform: rotate(0);\
+    transform: rotate(0);\
+  \}\
+  .bottom-bar \{\
+    -webkit-transform: rotate(0);\
+    -ms-transform: rotate(0);\
+    transform: rotate(0);\
+  \}\
+\}\
+\
+\
+\
+\
+// For Modals\
+\
+.top-bar-modal \{\
+  -webkit-transform: rotate(-45deg);\
+  -ms-transform: rotate(-45deg);\
+  transform: rotate(-45deg);\
+\}\
+.bottom-bar-modal \{\
+  -webkit-transform: rotate(45deg);\
+  -ms-transform: rotate(45deg);\
+  transform: rotate(45deg);\
+\}}
