@@ -5,21 +5,67 @@
   
 ----------------------------------------------------------------------------- */
 
+
 .navbar {
   border: none;
   background: $white !important;
 }
 
+.auto-center {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar-brand {
-    font-family: $narrow-font-family;
     font-size: 26px !important;
-    color: $black !important; 
+    margin: auto;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: $black;
 }
 
+
+.nav {
+  font-family: 'Darby Sans';
+  font-style: italic !important;
+  font-weight: none !important;
+  font-size: 8pt !important;
+  line-height: 1em;
+  letter-spacing: 0.5pt;
+  color: $black !important;
+  text-align: justify !important;
+  padding-top: 0em;
+  padding-bottom: 0em;
+    a:link{ 
+      font-family: 'Darby Sans' !important;
+      font-size: 8pt !important;
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: underline !important;
+    }
+    a:focus{
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: none !important;  
+    }
+    a:active{
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: none !important;
+    }
+}
+
+/*
 .nav {
   font-family: $nav-font-family;
   letter-spacing: 0.5px;
@@ -35,6 +81,7 @@
       color: $black !important;     
     }
 }
+*/
 
 /* -----------------------------------------------------------------------------
 
@@ -44,6 +91,7 @@
 .navbar-toggle {
   border: none;
   background: transparent !important;
+  width: 100%;
 
   &:hover {
     background: transparent !important;
@@ -54,19 +102,23 @@
     transition: all 0.2s;
   }
   .top-bar {
-    -webkit-transform: translateX(6px) translateY(6px) rotateZ(90deg);
-    -ms-transform: translateX(6px) translateY(6px) rotateZ(90deg);
-    transform: translateX(6px) translateY(6px) rotateZ(90deg);
+    -webkit-transform: translateX(3px) rotate(45deg);
+    -webkit-transform-origin: 10% 10%;
+    -ms-transform: translateX(3px) rotate(45deg);
+    -ms-transform-origin: 10% 10%;
+    transform: translateX(3px) rotate(45deg);
+    transform-origin: 10% 10%;
   }
   .middle-bar {
-    -webkit-transform: rotateZ(90deg);
-    -ms-transform: rotateZ(90deg);
-    transform: rotateZ(90deg);
+    opacity: 0;
   }
   .bottom-bar {
-    -webkit-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
-    -ms-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
-    transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
+    -webkit-transform: translateX(3px) rotate(-45deg);
+    -webkit-transform-origin: 10% 90%;
+    -ms-transform: translateX(3px) rotate(-45deg);
+    -ms-transform-origin: 10% 90%;
+    transform: translateX(3px) rotate(-45deg);
+    transform-origin: 10% 90%;
   }
 }
 
@@ -81,9 +133,7 @@
     transform: rotate(0);
   }
   .middle-bar {
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
+    opacity: 1;
   }
   .bottom-bar {
     -webkit-transform: rotate(0);
@@ -91,6 +141,9 @@
     transform: rotate(0);
   }
 }
+
+
+
 
 // For Modals
 

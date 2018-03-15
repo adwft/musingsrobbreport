@@ -1,8 +1,49 @@
+/* Quick & Dirty Fix */
+
+.list-new {
+  font-family: $reg-font-family;
+  color: $black !important;
+  text-decoration: none !important;
+    a:link{ 
+      color: $black !important;
+      font-style: none;
+      font-weight: normal;
+      font-size: 16px;
+      padding-top: 20px !important;
+      margin-top: 20px !important;
+      text-decoration: none !important; 
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+    a:visited{
+      color: $black !important;
+      text-decoration: none; 
+    }
+}
+
+  .image-left{
+     height: 50%;
+      width: 50%;
+      float: left !important;
+      padding: 0 10px 0 0px !important;
+  }
+
+
 /* _base.scss */
 
 .body2 {
      margin: 0;
-     background: url('../img/new_2800x1867.jpg') no-repeat center center fixed;
+     background: url('../img/homepage_graphic_1.gif') no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -11,19 +52,151 @@
 
 .body3 {
      margin: 0;
-     background: url('../img/ohsnap_2800x1867.png') no-repeat center center fixed;
+     background: url('../img/homepage_graphic_slow3.gif') no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
 }
 
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+// Musings RSVP Section
+ /* Container and elements */
+
+
+.main-column {
+  order: 0;
+}
+
+.mini-container2 {
+  flex-direction: column;
+  max-width: 250px;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  order: 2;
+  padding: 0 0 0 30px;
+  flex-wrap: wrap;
+}
+
+.center-container {
+  display: flex;
+}
+
+.logo-center {
+  margin: auto;
+}
+
+.ty-container {
+  margin: auto;
+}
+
+.sidebar-one {
+  display: flex;
+  flex: 1;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.number {
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.sidebar-two {
+  flex: 1;
+  order: 3;
+}
+
+.sidebar-three {
+  order: 4;
+  align-self: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin: 0 0 0 20px;
+}
+
+
+// New Section
+.mini-container3 {
+  flex-direction: column;
+  max-width: 250px;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  order: 6;
+  padding: 0 0 0 30px;
+  flex-wrap: wrap;
+}
+
+.sidebar-one-A {
+  display: flex;
+  flex: 1;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.sidebar-two-A {
+  flex: 1;
+  order: 7;
+}
+
+.sidebar2-three {
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0 0 0 20px;
+  flex-wrap: wrap;
+  order: 8;
+}
+
+.sidebar2-four {
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0 0 0 20px;
+  flex-wrap: wrap;
+  order: 9;
+}
+
 .btn-custom {
   color: #ffffff;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #f4c22c;
+  border-color: #f4c22c;
   border-radius: 0px;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: bold !important;
+  line-height: 1.4em;
+  letter-spacing: 0.4em;
+  align: center;
+  padding: 6px 25px 2px 30px;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none; 
     a:link{ 
       color: $white !important;
       font-weight: normal;
@@ -32,14 +205,67 @@
     a:hover{ 
       color: $white !important;
       text-decoration: none; 
+      outline: none !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none;   
     }
     a:focus{
       color: $white !important;
-      text-decoration: none;     
+      text-decoration: none; 
+      outline: none !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none; 
     }
     a:active{
      color: $white !important; 
-     text-decoration: none;    
+     text-decoration: none;
+     outline: none !important;
+     box-shadow: none !important;
+     -webkit-box-shadow: none;   
+    }
+}
+
+.btn-custom2 {
+  color: #ffffff;
+  background-color: #f4c22c;
+  border-color: #f4c22c;
+  border-radius: 0px;
+  font-size: 1.6em;
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: bold !important;
+  line-height: 1.6em;
+  letter-spacing: 0.2em;
+  align: center;
+  padding: 6px 30px 2px 38px;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none; 
+    a:link{ 
+      color: $white !important;
+      font-weight: normal;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+      outline: none !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none;   
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none; 
+      outline: none !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none; 
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;
+     outline: none !important;
+     box-shadow: none !important;
+     -webkit-box-shadow: none;   
     }
 }
 
@@ -87,16 +313,138 @@ a {
     }
 }
 
+.inline {
+  display: inline;
+}
 
-.main-copy {
-	font-family: $serif-font-family;
-  font-style: italic;
+.date {
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: none !important;
+  font-size: 4em !important;
+  line-height: .7em;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em;
+  color: #f4c22c !important;
+}
+
+.month {
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: bold !important;
+  font-size: 1em !important;
+  line-height: -20pt;
+  letter-spacing: 0.1em;
+  color: $black !important;
+  text-align: center !important;
+}
+
+.event-title {
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: bold !important;
+  font-size: 1.72em !important;
+  line-height: .5em;
+  letter-spacing: 0em;
+  color: $black !important;
+}
+
+.day {
+  font-family: 'Darby Sans';
+  font-style: none;
+  font-weight: none !important;
+  font-size: 1em !important;
+  line-height: 0em;
+  letter-spacing: 0em;
+  color: $black !important;
+  text-align: center !important;
+}
+
+.time {
+  font-family: 'Darby Sans';
+  font-style: none;
+  font-weight: none !important;
+  font-size: 1em !important;
+  line-height: 0em;
+  letter-spacing: 0.08em;
+  color: $black !important;
+  text-align: center !important;
+}
+
+/*
+.title-copy {
+  font-family: $serif-font-family;
+  font-style: none;
   font-weight: normal !important;
-  font-size: 3em !important;
+  font-size: 3.2em !important;
   line-height: 1.2em;
   letter-spacing: 0.06em;
   color: $black !important;
   text-align: center !important;
+}
+*/
+
+.title-copy {
+  font-family: 'Chiswick Poster XLight';
+  font-weight: normal !important;
+  font-style: none !important;
+  font-size: 5em !important;
+  text-align: center !important;
+  line-height: .9em;
+}
+
+.main-copy3 {
+  font-family: 'Chiswick Text';
+  font-style: none;
+  font-weight: normal !important;
+  font-size: 1.1em !important;
+  line-height: 1.6em;
+  letter-spacing: 0.06em;
+  color: #515151 !important;
+  text-align: justify !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.m3-italics {
+  font-family: 'Chiswick Text';
+  font-style: italic;
+}
+
+.title-copy2 {
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: normal !important;
+  font-size: 1.2em !important;
+  line-height: 1.6em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: center !important;
+}
+
+.title-copy2-skinny {
+  font-family: 'Darby Sans';
+  font-style: none;
+  font-weight: normal !important;
+  font-size: 1.2em !important;
+  line-height: 1.6em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: center !important;
+}
+
+
+.main-copy {
+	font-family: $serif-font-family;
+  font-style: none;
+  font-weight: normal !important;
+  font-size: 1.2em !important;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: justify !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
     a:link{ 
       color: $black !important;
       font-weight: normal;
@@ -117,8 +465,565 @@ a {
 }
 
 
+.main-copy-rag {
+  font-family: 'Chiswick Text';
+  font-style: none;
+  font-weight: normal !important;
+  font-size: 1.1em !important;
+  line-height: 1.6em;
+  letter-spacing: 0.06em;
+  color: #515151 !important;
+  text-align: center !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  a:link{ 
+      color: $black !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      font-weight: bold !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      font-weight: bold !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     font-weight: bold !important;
+     text-decoration: none;    
+    }
+}
+
+.footer-main {
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: normal !important;
+  font-size: 1.2em !important;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: justify !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+    a:link{ 
+      color: $black !important;
+      font-weight: normal;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+.footer-main-italic {
+  font-family: 'Darby Sans Poster';
+  font-style: italic;
+  font-weight: bold !important;
+  font-size: 0.3 !important;
+  line-height: 3.2em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: justify !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+    a:link{ 
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+    }
+    a:focus{
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: bold !important;
+      text-decoration: none !important;  
+    }
+    a:active{
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+    }
+}
+
+.footer-main-italic-lt {
+  font-family: 'Darby Sans' !important;
+  font-style: italic;
+  font-weight: none !important;
+  font-size: 0.3 !important;
+  line-height: 3.2em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: justify !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+    a:link{ 
+      font-family: 'Darby Sans' !important;
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: none !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: none !important;
+    }
+    a:focus{
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: none !important; 
+    }
+    a:active{
+      color: $black !important;
+      font-style: italic !important;
+      font-weight: none !important;
+      text-decoration: none !important;   
+    }
+}
+
+.footer-main-light {
+  font-family: 'Roboto', sans-serif;
+  font-style: none;
+  font-weight: none !important;
+  font-size: 8pt !important;
+  line-height: 1pt !important;
+  letter-spacing: 0.06em;
+  color: #969696 !important;
+  text-align: justify !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.main-copy2 {
+  font-family: $reg-font-family;
+  font-style: none;
+  font-weight: normal !important;
+  font-size: .9em !important;
+  line-height: 1.8em;
+  letter-spacing: 0.06em;
+  color: $black !important;
+  text-align: center !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid #848484;
+  border-right-style: none;
+  border-bottom: 1px solid #848484;
+  border-left-style: none;
+}
+
+.speaker-titles {
+  font-family: 'Darby Sans Poster';
+  font-style: none;
+  font-weight: bold !important;
+  font-size: 1.5em !important;
+  line-height: 2.2em;
+  letter-spacing: 0.1em;
+  color: $black !important;
+  text-align: center !important;
+}
+  //New Vertical Align Trick
+
+.container-1{
+display: flex;
+justify-content: space-between;
+}
+
+// Set Defaults
+.desktop-visible { 
+  display:none;
+  }
+
+// Desktop and landscape tablets
+@media (min-width: 700px) {
+
+.desktop-visible { 
+  display: block; 
+  margin: 0 auto; 
+  }
+}
+
+// Main Media Query
+@media(min-width: 768px){
+  .container-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .container-3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}
+
+#videoDiv {
+  width: 100%; 
+  height: 100%; 
+  position: relative;
+}
+
+#videoBlock {
+  width: 100%; 
+  height: 100%;  
+  display: flex;  
+  justify-content: center; 
+  align-items: center;
+}
+
+.container-1 div{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.container-2 div{
+  max-width: 1000px;
+  border: none;
+  padding: 10px;
+}
+
+.springplace-container1 {
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-sp {
+  max-width: 425px;
+  margin: 0 20px 0 20px;
+}
+
+.sp-squareimg {
+  max-width: 500px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.springplace-container2 {
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sp-smallcontainer {
+  max-width: 500px;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.spring-blurb {
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.sp-logo {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.img-container {
+  max-width: 500px;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.sp-largeimg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.container-aboutmuse {
+  max-width: 950px;
+  border: none;
+  display: flex;
+  margin: auto;
+}
+
+.box-middlecopy {
+  flex-grow: 2;
+  margin: auto;
+  padding: 30px;
+}
+
+
+.container-3 div{
+  border: none;
+  padding: 10px;
+}
+
+.container-3-box{
+  flex-basis: 25%;
+}
+
+.box-1{
+  flex-basis: 10%;
+}
+
+.box-2{
+  flex-basis: 20%;
+  margin:  1em 5em 1em 5em;
+}
+
+.box-3{
+  flex-grow: 2;
+  margin: 1em;
+  align-self: start;
+}
+
+
+.box-4{
+  flex-grow: 3;
+  margin: 0em 3em 3em 3em;
+  align-self: start;
+}
+
+.box-a{
+  flex-grow: 2;
+  margin: 2em
+}
+
+.box-b{
+  flex-grow: 2;
+  margin: 1em;
+}
+
+.box-c{
+  flex-grow: 2;
+}
+
+.box-d{
+  flex-grow: 2;
+  margin: 2em
+}
+
+.box-e{
+  flex-grow: 1;
+}
+
+.box-padding {
+  flex-basis: 25%;
+}
+
+.container-musings {
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.musings-image {
+  margin: 0 10px 20px 10px;
+}
+
+.musings-copy {
+  max-width: 500px;
+  margin: 0 20px 0 20px;
+  padding: 20px;
+}
+
+
+// Partners Section
+ /* Logos */
+
+.partners-space {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo-1 {
+  margin: 1em
+}
+
+.logo-2 {
+  margin: 1em
+}
+
+.logo-3 {
+  margin: 1em
+}
+
+/* original scss for speakers
+.container-speakers{
+  display: flex;
+}
+
+.box-speakerbio{
+  max-width: 300px;
+  margin: 2em;
+}
+
+.box-speakerimage{
+  margin: 2em;
+}
+
+.box-speakerpad{
+  flex-basis: 20%;
+  margin: 2em;
+}
+
+.box-padding {
+  flex-basis: 25%;
+}
+*/
+
+
+.container-speakers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box-speakerbio {
+  max-width: 320px;
+  min-width: 320px;
+  margin: 1em;
+  align-self: flex-start;
+}
+
+.box-speakerimage {
+  margin: 2em;
+}
+ 
+.box-speakerpad {
+  flex-basis: 20%;
+  margin: 2em;
+}
+
+  //Footer
+.footer-wrap {
+  display: flex;
+}
+
+.container-footer{
+  display: flex;
+}
+
+.line {
+  border-top: 1px solid #848484;
+  margin: 10px 3em 10px 3em;
+}
+
+.footer-box{
+  flex-basis: 100%;
+}
+
+.center-me {
+  margin: auto;
+}
 
 // Image 
 img.device{
 	width: 100%;
 }
+
+
+// Video
+ /* Default to hide the video on all devices */
+#video2{display:none}
+#video3{display:none}
+
+/* Default to display the image on all devices */
+#videosubstitute{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#fullScreenDiv{
+    width:100%;
+    min-height: 100%; 
+   /* Set the height to match that of the viewport. */
+    height: 100vh;
+    width: auto;
+    padding:0!important;
+    margin: 0!important;
+    background-color: gray;
+    position: relative;
+}
+#video2 {    
+    width: 100vw; 
+    height: auto;
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #video2 {
+    height: 150%;
+    top: -100%;
+  }
+
+  #videosubstitute{
+    display:block;
+    width: 100%;
+    height: 100%;}
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video2 {
+    width: 150%;
+    left: -100%;
+  }
+
+#videosubstitute{display:block;width:auto;height:auto;}
+}
+
+/*if there is 600 pixels or more, then display the video but hide the image*/
+@media only screen and (min-width : 600px) {
+#video2{display:block;}
+#video3{display:block;}
+#videosubstitute{display:none}
+}   
+

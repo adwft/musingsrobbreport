@@ -1,3 +1,38 @@
+// Custom Fonts Installed
+@font-face {
+    font-family: 'Chiswick Poster XLight';
+    src: url('fonts/ChiswickPoster-XLight.eot');
+    src: url('fonts/ChiswickPoster-XLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ChiswickPoster-XLight.woff2') format('woff2'),
+        url('fonts/ChiswickPoster-XLight.woff') format('woff'),
+        url('fonts/ChiswickPoster-XLight.ttf') format('truetype'),
+        url('fonts/ChiswickPoster-XLight.svg#ChiswickPoster-XLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Chiswick Text';
+    src: url('../fonts/ChiswickText-Regular.eot');
+    src: url('../fonts/ChiswickText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ChiswickText-Regular.woff2') format('woff2'),
+        url('../fonts/ChiswickText-Regular.woff') format('woff'),
+        url('../fonts/ChiswickText-Regular.ttf') format('truetype'),
+        url('../fonts/ChiswickText-Regular.svg#ChiswickText-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chiswick Text';
+    src: url('../fonts/ChiswickText-RegularItalic.eot');
+    src: url('../fonts/ChiswickText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ChiswickText-RegularItalic.woff2') format('woff2'),
+        url('../fonts/ChiswickText-RegularItalic.woff') format('woff'),
+        url('../fonts/ChiswickText-RegularItalic.ttf') format('truetype'),
+        url('../fonts/ChiswickText-RegularItalic.svg#ChiswickText-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
 
 /*# sourceMappingURL=_variables.css.map */
