@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,47 +20,57 @@
     
     <!-- Google Fonts External Link -->
     <link href='https://fonts.googleapis.com/css?family=Chiswick Poster XLight' rel='stylesheet' type='text/css'> 
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css'> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom Fonts -->
     <link href='http://musingsrobbreport.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
     
     <!-- Fav Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="http://musingsrobbreport.com/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="http://musingsrobbreport.com/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="musingsrobbreport.com/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="musingsrobbreport.com/img/favicon-16x16.png">
+    <link rel="manifest" href="musingsrobbreport.com/img/site.webmanifest">
+    <link rel="mask-icon" href="musingsrobbreport.com/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
 
   </head>
   <body>
   
-  <main>
-  <!--   Nav bar to collapse/expand -->
-  <nav id="navBar"></nav>
-  </main>
+      <!-- Getting Close -->
 
-    <!-- Begin Old Navigation Code
+      <!--
       <nav class="navbar navbar-default navbar-fixed-top navbar-static">
-      <div class="container">
-        <img src="img/muse-spring-2018.png">
-        <div class="line"></div>
-
-
-        <div class="navbar-header">
-
+      <div class="center-container"> -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!--<div class="navbar-header ty-container">
+        <div><a class="navbar-brand" href="index.html"><img src="img/muse_logo_small.png"></a></div>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="img/muse_logo_small.png"></a>
-        </div>
+          <div>
+          -->
+        
+      <nav class="navbar navbar-default navbar-fixed-top navbar-static">
+      <div class="auto-center">
+        <div class="navbar-brand"><img src="img/muse_logo_small.png"></div>
+      </div>
+      <div class="center-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="ty-container">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div>
+        
 
 
         <div class="collapse navbar-collapse" id="collapse-1">
@@ -67,16 +78,17 @@
             <li><a href="#musings-start">Musings</a></li>
             <li><a href="#aboutmuse-start">About Muse by Robb Report</a></li>
             <li><a href="#3springp">About Spring Place</a></li>
-            <li><a href="#rsvp-start">RSVP</a></li>
-            <li><a href="#series-start">Series Speakers & Panelists</a></li>
-            <li><a href="#ourpartners-start">Our Partners</a></li>
-            <li><a href="#">PDF Program</a></li>
+           <!-- <li><a href="#rsvp-start">RSVP</a></li> -->
+           <li><a href="#series-start">Series Speakers & Panelists</a></li> 
+          <!--  <li><a href="#ourpartners-start">Our Partners</a></li> -->
+            <li><a href="http://www.musingsrobbreport.com/Musings-Program.pdf">PDF Program</a></li>
           </ul>
         </div>
 
       </div>
+      </div>
     </nav>
-     -->
+    
 
     
     <!-- This is a new note to test if this is enough of a change for git -->
@@ -118,11 +130,14 @@
       
       <div id="musings-start" class="container-musings">
         <div class="musings-image">
-          <img src="img/425x525.png">
+          <video  width="425" height="525" preload="preload"  id="video4" autoplay="autoplay" loop="loop">
+          <source src="video/musingsfull_v4.webm" type="video/webm"></source>
+          <source src="video/musingsfull_v4.mp4" type="video/mp4"></source>
+        </video> 
         </div>
         <div class="musings-copy" align="center">
           <p class="title-copy">Musings</p>
-          <p class="main-copy3">A brand-new speaker series celebrating the launch of <span class="m3-italics">Muse</span> by Robb Report, in partnership with Spring Place. Part Luxury, part thought leadershop, <span class="m3-italics">Musings</span> offers a unique live forum in which influential women—trailblazers, tastemakers, idealists, and disruptors—share their views and values on topics ranging from style, design, the arts, travel, wellenss, wealth management, and philanthropy.</p><button a-href="http://www.pages.email.robbreport.com/musingsRSVP/" type="submit" class="btn btn-custom" onclick="location.href = 'http://pages.email.robbreport.com/musingsRSVP/';">RSVP</button>
+          <p class="main-copy3">A brand new speaker series celebrating the launch of <span class="m3-italics">Muse</span>&nbsp;by Robb Report, in partnership with Spring Place. Part luxury, part thought leadership, <span class="m3-italics">Musings</span> offers a unique live forum in which influential women—trailblazers, tastemakers, idealists, and disruptors—share their views and values on topics ranging from style, design, the arts, travel, wellness, wealth management, and philanthropy.</p><button a-href="http://www.pages.email.robbreport.com/musingsRSVP/" target="_blank" type="button" class="btn btn-custom" onclick="location.href = 'http://pages.email.robbreport.com/musingsRSVP/';">RSVP</button>
         </div>
       </div>
 
@@ -149,10 +164,10 @@
   <div class="row" id="aboutmuse-start">
     <div id="videoDiv"> 
       <div id="videoBlock">
-      <img src="https://www.imi21.com/wp-content/uploads/2016/11/t12.jpg" id="videosubstitute" alt="">   
-        <video preload="preload"  id="video" autoplay="autoplay" loop="loop">
-          <source src="video/EYdLIhJ.webm" type="video/webm"></source>
-          <source src="video/EYdLIhJ.mp4" type="video/mp4"></source>
+      <img src="img/muse-imageswap.jpg" id="videosubstitute" alt="">   
+        <video preload="preload"  id="video2" autoplay="autoplay" loop="loop">
+          <source src="video/MUSEdemo2.webm" type="video/webm"></source>
+          <source src="video/MUSEdemo2.mp4" type="video/mp4"></source>
         </video> 
       </div>
     </div>
@@ -255,49 +270,20 @@
           <p class="main-copy3">Spring is where culture, creativity and ideas come together to transform brands. It is an innovative and collaborative marketing ecosystem comprised of a creative agency, a production and events group, and Spring Place, a collaborative workspace and business club. Spring has deep roots in the fashion and luxury sectors and decades of experience working with brands in fashion, beauty, entertainment, music, art and technology.</p>
         </div>
         <div class="sp-squareimg">
-          <img src="img/425x425.png">
+          <img src="img/springplace1-425x425.jpg">
         </div>
       </div>
 
-      <!--
-      <div class="container-2">
-        <div class="box-a">
-        </div>
-        <div class="box-b">
-          <img align="center" width="425px" height="525px" src="img/placeholder.png">
-        </div>
-        <div class="box-2" align="center">
-          <p class="main-copy2">The global Spring community has headquarters in London, New York and Milan, with future openings set to include Los Angeles and Paris.</p>
-        </div>
-        <div class="box-d">
-        </div>
-      </div>
-      -->
 
             <div class="springplace-container1">
-        <div class="about-sp"><img class="sp-largeimg" src="img/425x525.png">
+        <div class="about-sp"><img class="sp-largeimg" src="img/springplace2-425x425.gif">
         </div>
         <div class="sp-squareimg">
           <div class="sp-logo"><img src="img/springplacelogo.png" width="100px"></div>
-          <div class="spring-blurb"><p class="main-copy2">The global Spring community has headquarters in London, New York and Milan, with future openings set to include Los Angeles and Paris.</p>
+          <div class="spring-blurb"><p class="main-copy2"><i>The global Spring community has headquarters in London, New York and Milan, with future openings set to include Los Angeles and Paris.</i></p>
           </div>
         </div>
       </div>
-
-
-      <!--<div class="springplace-container2">
-        <div class="img-container">
-          <div class="sp-largeimg"><img src="img/425x525.png">
-          </div>
-        </div>
-        <div class="sp-smallcontainer">
-          <div class="sp-logo"><img src="img/springplacelogo.png" width="100px"></div>
-          <div class="spring-blurb">
-            <p class="main-copy2">The global Spring community has headquarters in London, New York and Milan, with future openings set to include Los Angeles and Paris.</p>
-          </div>
-        </div>
-      </div>
-      -->
 
 
     <section>
@@ -312,13 +298,13 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="extra-pad">
+          <div class="extra-pad" id="series-start">
               
           </div>
         </div>
       </div>
     </section>
-
+<!--
     <section id="rsvp-start">
       <div class="container">
         <div class="row">
@@ -327,9 +313,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-
+<!--
 
     <section>
       <div class="container">
@@ -342,12 +328,12 @@
     </section>
     
       <div class="container-2">
-          <div class="box-a">
-          </div>
+          <div class="box-a"></div>
           <div class="box-c" align="center">
             <p class="title-copy">Musings New York</p>
-            <img align="center" width="20px" height="auto" src="img/location_tag.svg">
-            <p class="title-copy2">Spring Place<br>6 St. Johns Lane, NY 10013, 7th Floor Lounge</p>
+            <div class="extra-pad"></div>
+            <img align="center" width="20px" height="auto" src="img/location_tag2.png">
+            <p class="title-copy2">Spring Place, 7th Floor Lounge<br>6 St. Johns Lane, NY 10013</p>
           </div>
           <div class="box-d">
           </div>
@@ -355,7 +341,10 @@
 
       <div class="column-layout">
         <div class="main-column">
-          <img class="desktop-visible" src="img/425x525.png">
+          <video  width="425" height="525" preload="preload"  id="video3" autoplay="autoplay" loop="loop">
+          <source src="video/nyc_v1.webm" type="video/webm"></source>
+          <source src="video/nyc_v1.mp4" type="video/mp4"></source>
+        </video> 
         </div>
         
         <div class="column-2">
@@ -365,25 +354,14 @@
               <div><span class="month">MARCH</span><span class="day"><br>Wednesday</span></div>
             </div>
             <div class="sidebar-two">
-              <span class="time">5:30p.m – 8:00p.m.<br><br></span><button a-href="http://www.pages.email.robbreport.com/musingsRSVP/" type="submit" class="btn btn-custom2" onclick="location.href = 'http://pages.email.robbreport.com/musingsRSVP/';">RSVP</button>
+              <span class="time">5:30p.m – 8:30p.m.<br><br></span><button a-href="http://www.pages.email.robbreport.com/musingsRSVP/" type="submit" class="btn btn-custom2" onclick="location.href = 'http://pages.email.robbreport.com/musingsRSVP/';">RSVP</button>
             </div>
           </div>
-
-          <div class="sidebar-three"><span class="event-title">Musings on The Intersection of Style & Culture</span>
+          </div>
+          <div class="sidebar2-three"><span class="event-title"><i>Musings</i>: The Suit of Power & The Intersection of Style & Culture</span>
           </div>
 
-          <div class="mini-container3">
-            <div class="sidebar2-one">
-              <div class="number"><span class="date">04</span></div>
-              <div><span class="month">APRIL</span><span class="day"><br>Wednesday</span></div>
-            </div>
-            <div class="sidebar2-two">
-              <span class="time">5:30p.m – 8:00p.m.<br><br></span><button a-href="http://www.pages.email.robbreport.com/musingsRSVP/" type="submit" class="btn btn-custom2" onclick="location.href = 'http://pages.email.robbreport.com/musingsRSVP/';">RSVP</button>
-            </div>
-          </div>
 
-          <div class="sidebar2-three"><span class="event-title">Musings on The Intersection of Style & Culture</span>
-          </div>
         </div>
     </div>
 
@@ -396,27 +374,24 @@
       </div>
     </section>
 
+-->
 
-        <div class="box-a">
-        </div>
-        <div class="box-c" align="center">
-          <p class="title-copy">Musings Los Angeles</p>
-          <img align="center" width="20px" height="auto" src="img/location_tag.svg">
-          <p class="title-copy2">Spring Place<br>121 S. Spalding, LA 90036</span></p>
-        </div>
-        <div class="box-d">
-        </div>
-      </div>
-
-
-    <section id="series-start">
-      <div class="container">
-        <div class="row">
-          <div class="extra-pad2"> 
+          <!-- End mini-container2 and start next RSVP Button 
+           <div class="mini-container3">
+            <div class="sidebar-one-A">
+              <div class="number"><span class="date">28</span></div>
+              <div><span class="month">MARCH</span><span class="day"><br>Wednesday</span></div>
+            </div>
+            <div class="sidebar-two-A">
+              <span class="time">5:30p.m – 8:30p.m.<br><br></span><button a-href="http://www.pages.email.robbreport.com/musingsRSVP/" type="submit" class="btn btn-custom2" onclick="location.href = 'http://pages.email.robbreport.com/musingsRSVP/';">RSVP</button>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+          </div>
+          <div class="sidebar2-three"><span class="event-title"><i>Musings</i>: The Suit of Power & The Intersection of Style & Culture</span>
+          </div>
+
+          <!-- This wraps up column-2 -->
+
 
      <section>
       <div class="container">
@@ -429,8 +404,8 @@
 
 
 
-    <!-- Greyed out the working one in case I need it
-
+    
+    <!--
     <div class="box-logo" align="center">
       <p class="title-copy">Series Speakers<br>& Panelists</p>
     </div>
@@ -441,25 +416,859 @@
           <div class="box-speakerbio"><span class="speaker-titles">FIRST LAST</span><br><span class="main-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in blandit risus, ut maximus diam. Suspendisse quis dignissim oric. Nunc quis ultiricies purus. Phasellus vitae felis eu urna gravida scelerisque.</span></div>
           <div class="box-padding">
           </div>
-          </div>
+          </div> -->
 
-        <section>
+
+
+    <!-- Start The Speakers Section -->
+
+
+    <div class="box-logo" align="center">
+      <p class="title-copy">Series Speakers<br>& Panelists</p>
+    </div>
+
+    <section>
       <div class="container">
         <div class="row">
           <div class="extra-pad2"> 
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <div class="box-logo" align="center">
-      <p class="title-copy">Series Speakers<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; & Panelists</p>
+
+        <!-- This Begins Barbara Bestor -->
+    <!--                              -->
+      <div class="container-musings">
+        <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/BarbaraBestor_cut.jpg">
+        </img> 
+        </div>
+
+        <div class="musings-copy">
+          <p><span class="speaker-main">BARBARA BESTOR</span><br><span class="speaker-credit">Founding Principal, Bestor Architecture</span><br><br>
+          <span class="main-copy3">Since 1995, Bestor Architecture has actively redefined Los Angeles architecture with a practice that rigorously engages the city through design, art, and urbanism. Barbara’s career is punctuated with inventive projects in a wide breadth of typologies. She has designed new ways of creating accessible urbanism in her “stealthy density” Blackbirds housing, groundbreaking retail and restaurant flagships, dazzling and dynamic workspaces for major LA corporations, award-winning experimental residences and pioneering arts projects that are deeply rooted in their communities...</p><br><p><a data-toggle="modal" data-target="#modal-barb">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-barb" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">BARBARA BESTOR<br><span class="speaker-credit-modal">Founding Principal, Bestor Architecture</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Since 1995, Bestor Architecture has actively redefined Los Angeles architecture with a practice that rigorously engages the city through design, art, and urbanism. Barbara’s career is punctuated with inventive projects in a wide breadth of typologies. She has designed new ways of creating accessible urbanism in her “stealthy density” Blackbirds housing, groundbreaking retail and restaurant flagships, dazzling and dynamic workspaces for major LA corporations, award-winning experimental residences and pioneering arts projects that are deeply rooted in their communities and cultural context.<br><br>
+ 
+              While maintaining a practice, Barbara has continuously taught at Southern California’s leading design schools from SCI-Arc to Woodbury University, where she is also currently the executive director of the Julius Shulman Institute. She received her undergraduate degree at Harvard University, studied at the Architecture Association in London and received a MARCH at SCI-Arc. She is the author of <span class="speaker-bio-modal-it">Bohemian Modern, Living in Silver Lake.</span></span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends Barbara Bestor With Padding At The End -->
+<!--                                                  -->
+
+
+<!-- This Begins Cristina Binkley -->
+  <!--                              -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/ChristinaBinkley_cut.jpg">
+      </img> 
+
     </div>
-        <div class="container-speakers">
-          <div class="box-speakerimage"><img src="img/250x350.png"></div>
-          <div class="box-speakerbio"><span class="speaker-titles">FIRST LAST</span><br><span class="main-copy3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in blandit risus, ut maximus diam. Suspendisse quis dignissim oric. Nunc quis ultiricies purus. Phasellus vitae felis eu urna gravida scelerisque.</span></div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">CHRISTINA BINKLEY</span><br><span class="speaker-credit">Journalist and Bestselling Author</span><br><br>
+          <span class="main-copy3">Christina writes about the business of culture. A long-time staff writer at <span class="speaker-bio-modal-it">The Wall Street Journal</span>, she is the author of "Winner Takes All", a <span class="speaker-bio-modal-it">New York Times</span> Bestseller about the race to dominate Las Vegas. She contributes to <span class="speaker-bio-modal-it">The New Yorker</span>, and other magazines. She is a graduate of the Columbia University Graduate School of Journalism, shared in a Pulitzer prize for coverage of 9/11 at <span class="speaker-bio-modal-it">The Wall Street Journal</span> and received an American Society of Newspaper Editors' Jesse Laventhol Prize for Deadline News Reporting. She lives with her family in Los Angeles.</p><br><p><a data-toggle="modal" data-target="#modal-christina">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-christina" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">CHRISTINA BINKLEY<br><span class="speaker-credit-modal">Journalist and Bestselling Author</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Christina writes about the business of culture. A long-time staff writer at <span class="speaker-bio-modal-it">The Wall Street Journal</span>, she is the author of "Winner Takes All", a <span class="speaker-bio-modal-it">New York Times</span> Bestseller about the race to dominate Las Vegas. She contributes to <span class="speaker-bio-modal-it">The New Yorker</span>, and other magazines. She is a graduate of the Columbia University Graduate School of Journalism, shared in a Pulitzer prize for coverage of 9/11 at <span class="speaker-bio-modal-it">The Wall Street Journal</span> and received an American Society of Newspaper Editors' Jesse Laventhol Prize for Deadline News Reporting. She lives with her family in Los Angeles.</span></span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
           </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
           </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends Christina Binkley With Padding At The End -->
+<!--                                                  -->
+
+
+<!-- This Begins Erin Christovale -->
+  <!--                              -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/ErinChristovale_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">ERIN CHRISTOVALE</span><br><span class="speaker-credit">Assistant Curator, The Hammer Museum</span><br><br>
+          <span class="main-copy3">Erin joined the Hammer as Assistant Curator in June 2017. Previously she was an independent curator and film programmer based in Los Angeles. She is the curator of Black Radical Imagination with Amir George, which has screened both nationally and internationally in spaces such as MoMA PS1, MOCA Los Angeles, and the Museo Taller Jose Clemente Orozco. Exhibitions include a/wake in the water: Meditations on Disaster (2014) at the Museum of Contemporary African Diasporan Arts.</p><br><p><a data-toggle="modal" data-target="#modal-Erin-c">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Erin-c" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">ERIN CHRISTOVALE<br><span class="speaker-credit-modal">Assistant Curator, The Hammer Museum</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Christina writes about the business of culture. A long-time staff writer at <span class="speaker-bio-modal-it">The Wall Street Journal</span>, she is the author of "Winner Takes All", a <span class="speaker-bio-modal-it">New York Times</span> Bestseller about the race to dominate Las Vegas. She contributes to <span class="speaker-bio-modal-it">The New Yorker</span>, and other magazines. She is a graduate of the Columbia University Graduate School of Journalism, shared in a Pulitzer prize for coverage of 9/11 at <span class="speaker-bio-modal-it">The Wall Street Journal</span> and received an American Society of Newspaper Editors' Jesse Laventhol Prize for Deadline News Reporting. She lives with her family in Los Angeles.</span></span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends Christovale Erin With Padding At The End -->
+<!--                                                  -->
+
+
+<!-- This Begins Ann Colgin -->
+  <!--                              -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/AnnColgin_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">ANN COLGIN</span><br><span class="speaker-credit">Owner, Colgin Cellars</span><br><br>
+          <span class="main-copy3">Ann is the owner of Napa Valley-based boutique winery Colgin Cellars, known for its handcrafted small production red wines.<br><br>
+            Ann holds a BA from Vanderbilt University and completed the Sotheby's Decorative Works of Art program in London. She received an MA in fine arts administration from New York University in 1984. She serves as a consultant to the Sotheby's Wine Department and helped establish some of the top charity wine auctions across the country, aom 
+            .</p><br><p><a data-toggle="modal" data-target="#modal-Ann-c">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Ann-c" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">ANN COLGIN<br><span class="speaker-credit-modal">Owner, Colgin Cellars</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Ann is the owner of Napa Valley-based boutique winery Colgin Cellars, known for its handcrafted small production red wines.<br><br>
+
+              Ann holds a BA from Vanderbilt University and completed the Sotheby's Decorative Works of Art program in London. She received an MA in fine arts administration from New York University in 1984. She serves as a consultant to the Sotheby's Wine Department and helped establish some of the top charity wine auctions across the country, including The Naples Winter Wine Festival and the High Museum Wine Auction in Atlanta, Georgia. Ann is also on the Executive Committee of the Centre Pompidou Foundation. In 2007 she joined the Board of Trustees of LACMA and has chaired the Collectors Committee Weekend since 2009.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends Ann Colgin With Padding At The End -->
+<!--                                              -->
+
+<!-- This Begins TRACY GRAY -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/TracyGray_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">TRACY GRAY</span><br><span class="speaker-credit">Founder & Managing Partner of The 22 Fund and Founder of We Are Enough (WAE)</span><br><br>
+          <span class="main-copy3">Tracy is the Founder & Managing Partner of The 22 Fund, an impact, growth venture capital firm with a job creation mission and investment strategy to increase the export capacity of Southern California manufacturing companies, targeting women- and minority-owned businesses. She is also an Executive in Residence at the Los Angeles Cleantech Incubator (LACI) and chairs LACI’s Diversity in Entrepreneurship Advisory Council.</p><br><p><a data-toggle="modal" data-target="#modal-Tracy">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Tracy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">TRACY GRAY<br><span class="speaker-credit-modal">Founder & Managing Partner of The 22 Fund<br> and Founder of We Are Enough (WAE)</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Tracy is the Founder & Managing Partner of The 22 Fund, an impact, growth venture capital firm with a job creation mission and investment strategy to increase the export capacity of Southern California manufacturing companies, targeting women- and minority-owned businesses. She is also an Executive in Residence at the Los Angeles Cleantech Incubator (LACI) and chairs LACI’s Diversity in Entrepreneurship Advisory Council. In addition, Tracy is the founder of the non-profit We Are Enough (WAE), with a mission to educate all women on how and why to invest in women-owned, for-profit businesses or with a “gender lens.” Tracy was named one of the 50 <span class="speaker-bio-modal-b">“Women of Influence” in business in Los Angeles and is featured in the recently released book “200 Hundred Women: Who Will Change the Way You See the World”</span>.<br><br>
+
+              Tracy was formerly Senior Advisor to the LA Mayor, an investment professional at a venture capital fund and a systems engineer on the Space Shuttle program. Ms. Gray holds a B.S. in Mathematical Science with an aeronautics emphasis from the UC Santa Barbara and dual MBAs from Columbia University and UC, Berkeley.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends TRACY GRAY With Padding At The End -->
+<!--                                              -->
+
+
+<!-- This Begins BARBARA GUGGGENHEIM -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/BarbaraGuggenheim_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">BARBARA GUGGGENHEIM</span><br><span class="speaker-credit">Partner, Guggenheim, Asher Associates</span><br><br>
+          <span class="main-copy3">As a partner in one of America’s best-known firms of art advisers for over twenty-five years, Barbara has built collections for major corporations, such as Sony and Coca-Cola, and individuals, including high-profile celebrities Tom Cruise and Steven Spielberg. She holds a doctorate in Art History from Columbia University and has headed two departments at Christie’s.</p><br><p><a data-toggle="modal" data-target="#modal-Barbara">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Barbara" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">BARBARA GUGGGENHEIM<br><span class="speaker-credit-modal">Partner, Guggenheim, Asher Associates</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              As a partner in one of America’s best-known firms of art advisers for over twenty-five years, Barbara has built collections for major corporations, such as Sony and Coca-Cola, and individuals, including high-profile celebrities Tom Cruise and Steven Spielberg. She holds a doctorate in Art History from Columbia University and has headed two departments at Christie’s.<br><br>
+
+              Barbara has written commentaries on the art world for many journals, including <span class="speaker-bio-modal-it">Robb Report</span>, and regularly appears on industry power lists. She’s written five books, the most recent of which is <span class="speaker-bio-modal-it">Art World: The New Rules of the Game</span>. In her spare time, Barbara writes humorous short stories published in <span class="speaker-bio-modal-it">Elle</span> and <span class="speaker-bio-modal-it">Harper’s Bazaar</span>.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends BARBARA GUGGGENHEIM With Padding At The End -->
+<!--                                              -->
+
+<!-- This Begins Jennifer Hyman -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/JenniferHyman_cut2.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">JENNIFER HYMAN</span><br><span class="speaker-credit">Chief Executive Officer & Co-Founder, Rent the Runway</span><br><br>
+          <span class="main-copy3">Jennifer is the Co-Founder and Chief Executive Officer of Rent the Runway, a company that is disrupting the $1.7 trillion fashion industry by introducing clothing rental as a utility in women’s everyday lives. She co-founded Rent the Runway in 2009 with Jennifer Fleiss, and has since raised over $210 million in venture capital, growing the business to 8 million members, 1,200 employees (which is over 70% female and 70% minority) and 550 designer brands.</p><br><p><a data-toggle="modal" data-target="#modal-JennH">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-JennH" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">JENNIFER HYMAN<br><span class="speaker-credit-modal">Chief Executive Officer & Co-Founder, Rent the Runway</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Jennifer is the Co-Founder and Chief Executive Officer of Rent the Runway, a company that is disrupting the $1.7 trillion fashion industry by introducing clothing rental as a utility in women’s everyday lives. She co-founded Rent the Runway in 2009 with Jennifer Fleiss, and has since raised over $210 million in venture capital, growing the business to 8 million members, 1,200 employees (which is over 70% female and 70% minority) and 550 designer brands. As the CEO, Jennifer has built Rent the Runway from an idea into a profitable, high-growth company and one of the most beloved brands in the U.S. Jennifer has been honored with recognitions like Forbes “12 Most Disruptive Names in Business”, Fortune’s “Most Powerful Female Entrepreneurs”, “Trailblazers”, “40 under 40” and Fast Company’s “Most Creative People in Business.” </span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends JENNIFER HYMAN With Padding At The End -->
+<!--                                              -->
+
+
+<!-- This Begins DEBRA LEE -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/DebraLee_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">DEBRA L. LEE</span><br><span class="speaker-credit">Chairman & CEO of BET Networks</span><br><br>
+          <span class="main-copy3">With a trailblazing year career spanning over 3 decades, Debra is arguably one of the most influential female voices in the entertainment industry. Lee currently serves as the Chairman & CEO of BET Networks, the leading provider of entertainment for the African-American audience and consumers of Black culture globally. During her tenure, Debra has helmed BET’s reinvigorated approach to corporate philanthropy & authentic programming.</p><br><p><a data-toggle="modal" data-target="#modal-DebraL">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-DebraL" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">DEBRA L. LEE<br><span class="speaker-credit-modal">Chairman & CEO of BET Networks</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              With a trailblazing year career spanning over 3 decades, Debra is arguably one of the most influential female voices in the entertainment industry. Lee currently serves as the Chairman & CEO of BET Networks, the leading provider of entertainment for the African-American audience and consumers of Black culture globally. During her tenure, Debra has helmed BET’s reinvigorated approach to corporate philanthropy & authentic programming.<br><br>
+
+              Named one of The Hollywood Reporter’s 100 Most Powerful Women in Entertainment and Billboard’s Power 100, Debra’s achievements have earned her numerous accolades including the Distinguished Leadership Vanguard Award by the National Cable & Telecommunications Association. She was inducted into the Broadcasting & Cable Hall of Fame - and in February 2017, the GRAMMY Organization recognized Debra with the Salute To Industry Icons Award. She is currently the first and only woman to receive the distinguished honor.
+</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends DEBRA LEE With Padding At The End -->
+<!--                                              -->
+
+<!-- This Begins NIKI LEONDAKIS PLACEHOLDER -->
+<!-- This Begins NIKI LEONDAKIS PLACEHOLDER -->
+<!-- This Begins NIKI LEONDAKIS PLACEHOLDER -->
+<!-- This Begins NIKI LEONDAKIS PLACEHOLDER -->
+<!-- This Begins NIKI LEONDAKIS PLACEHOLDER -->
+<!-- This Begins NIKI LEONDAKIS PLACEHOLDER -->
+<!-- This Begins NIKI LEONDAKIS PLACEHOLDER -->
+  
+ <!-- This Begins NANETTE LEPORE -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/NanetteLepore_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">NANETTE LEPORE</span><br><span class="speaker-credit">Designer</span><br><br>
+          <span class="main-copy3">Nanette started her namesake Nanette Lepore brand in New York City’s Garment District in 1992. Known for her feminine frocks, delicate embroidery and romantic silhouettes, she has played a fundamental role in the growth of American fashion.</p><br><p><a data-toggle="modal" data-target="#modal-NanL">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-NanL" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">NANETTE LEPORE<br><span class="speaker-credit-modal">Designer</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Nanette started her namesake Nanette Lepore brand in New York City’s Garment District in 1992. Known for her feminine frocks, delicate embroidery and romantic silhouettes, she has played a fundamental role in the growth of American fashion.<br><br>
+
+              Today, Nanette continues to design in her atelier in the Garment Center alongside her husband, Robert, who helms the business side as the company’s President. Manufacturing the majority of her line in New York City with commitment to quality craftsmanship, Nanette is an outspoken advocate for New York City’s Garment Center. Inspired by her worldwide travels and free spirit, Nanette’s designs are adored among style-makers and celebrities including Michelle Obama, Blake Lively, Scarlett Johansson, Abigail Breslin, Sarita Choudhury, Emma Roberts, Freida Pinto, Bette Midler, and Susan Sarandon.
+
+</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends NANETTE LEPORE With Padding At The End -->
+<!--                                              -->
+
+
+ <!-- This Begins VALERIA NAPOLEONE -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/ValeriaNapoleone_cut2.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">VALERIA NAPOLEONE</span><br><span class="speaker-credit">Art Collector & Patron</span><br><br>
+          <span class="main-copy3">Valeria is an art collector and patron to a select number of arts organizations. She is a Trustee of the Contemporary Art Society and Head of the Development Committee at Studio Voltaire, the Institute of Fine Arts in NYC, a member of the NYU President’s Global Council and is an Advisory Board member of the Association of Women in the Arts.</p><br><p><a data-toggle="modal" data-target="#modal-Val">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Val" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">VALERIA NAPOLEONE<br><span class="speaker-credit-modal">Art Collector & Patron</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Valeria is an art collector and patron to a select number of arts organizations. She is a Trustee of the Contemporary Art Society and Head of the Development Committee at Studio Voltaire, the Institute of Fine Arts in NYC, a member of the NYU President’s Global Council and is an Advisory Board member of the Association of Women in the Arts. In addition to Valeria Napoleone XX Contemporary Art Society, Napoleone launched Valeria Napoleone XX SculptureCenter in September 2015 as a collaborative project that supports the production of a major artwork in a selected exhibition every 12 to 18 months at the New York-based non-profit dedicated to contemporary sculpture.<br><br>
+
+              Valeria received a BA from New York University’s Journalism School and an MA in Art Gallery Administration at the Fashion Institute of Technology, NYC. Valeria’s collection focuses on female contemporary artists working internationally. Forming an exceptionally close bond with artists, Valeria has supported many of today’s most acclaimed artists at pivotal moments in their careers.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends VALERIA NAPOLEONE With Padding At The End -->
+<!--                                              -->
+
+
+ <!-- This Begins BROOKE GARBER NEIDICH -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/BrookeGarbernNeidich_cut2.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">BROOKE GARBER NEIDICH</span><br><span class="speaker-credit">Owner, Creative Director Sidney Garber and Co-Founder of the Child Mind Institute </span><br><br>
+          <span class="main-copy3">Since inheriting the eponymous jewelry store her father, Sidney Garber, founded in Chicago, Brooke has opened an additional store on Madison Ave in New York City, expanded to six Barney's locations across New York, and introduced the brand to a series of specialty stores around the country. She is also a contributing editor of <span class="speaker-bio-modal-it">Town & Country Magazine</span>.</p><br><p><a data-toggle="modal" data-target="#modal-Brooke">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Brooke" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">BROOKE GARBER NEIDICH<br><span class="speaker-credit-modal">Owner, Creative Director Sidney Garber and Co-Founder of the Child Mind Institute</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Since inheriting the eponymous jewelry store her father, Sidney Garber, founded in Chicago, Brooke has opened an additional store on Madison Ave in New York City, expanded to six Barney's locations across New York, and introduced the brand to a series of specialty stores around the country. She is also a contributing editor of <span class="speaker-bio-modal-it">Town & Country Magazine</span>.<br><br>
+
+              Brooke donates all her profits to children’s mental health, the arts and education. She co-founded the Child Mind Institute with Dr. Harold Koplewicz, which is devoted to transforming mental healthcare for the world’s children though the integration of evidence-based treatment, groundbreaking scientific research, accessible information, and community outreach. Brooke currently serves as Board Chair of the Child Mind Institute, and is a Trustee of both Lincoln Center Theatre and the Whitney Museum of American Art. She has received numerous awards and honors for her dedication to community service and philanthropy. 
+</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends BROOKE GARBER NEIDICH With Padding At The End -->
+<!--                                              -->
+
+
+ <!-- This Begins MAGGIE NEILSON -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/MaggieNeilson_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">MAGGIE NEILSON</span><br><span class="speaker-credit">CEO and Co-Founder of Global Philanthropy Group</span><br><br>
+          <span class="main-copy3">Maggie Neilson is the CEO and Co-Founder of Global Philanthropy Group, where she leads efforts on domestic and international social issues for some of the world's leading corporations, high profile individuals, and foundations. Global Philanthropy Group has provided philanthropic and political strategy, implementation, and management services to more than 70 clients.</p><br><p><a data-toggle="modal" data-target="#modal-Magg">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Magg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">MAGGIE NEILSON<br><span class="speaker-credit-modal">CEO and Co-Founder of Global Philanthropy Group</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Maggie Neilson is the CEO and Co-Founder of Global Philanthropy Group, where she leads efforts on domestic and international social issues for some of the world's leading corporations, high profile individuals, and foundations. Global Philanthropy Group has provided philanthropic and political strategy, implementation, and management services to more than 70 clients, including Clinique, Tory Burch, the Eva Longoria Foundation, Gucci, and John Legend’s Show Me Campaign, on topics including education reform, homelessness, microfinance, Latina empowerment, human trafficking, and conflict resolution. Global Philanthropy Group was acquired by Charity Network in 2017, the parent company that includes Charitybuzz and Prizeo, among others. This partnership provides even more resources to increase the impact of philanthropic efforts.<br><br>
+ 
+              Previously, Maggie worked as an independent strategy consultant and launched new organizations, restructured existing ones, forged cross-sector partnerships and branded international efforts with clients including Synergos, UN International Year of Microcredit, M.A.C. Global AIDS Fund, and the International Women’s Health Coalition. Maggie was an early employee at Unitus, where she drove the award-winning microfinance accelerator’s advocacy, strategic partnership and communication efforts as VP of Strategic Development.
+ 
+</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends MAGGIE NEILSON With Padding At The End -->
+<!--                                              -->
+
+
+<!-- This Begins SHERRY PAUL -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/SherryPaul_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">SHERRY PAUL</span><br><span class="speaker-credit">CFP®, CIMA®, CRPC®, Senior Vice President, Private Wealth Advisor, UBS Wealth Management USA</span><br><br>
+          <span class="main-copy3">With nearly two decades of experience as a financial professional, Sherry has built a strong reputation for delivering comprehensive wealth management to high net worth and ultra-high net worth clients. Sherry is a Senior Portfolio Manager, a designation awarded by UBS to a small group of the most experienced advisors. She has been named as <span class="speaker-bio-modal-it">Forbes'</span> Top 200 Women Wealth Advisors, is a former member of the UBS Financial Advisor Advisory Council, and currently sits on the Advisory Council for All Bar None, UBS’ Women’s Network. </p><br><p><a data-toggle="modal" data-target="#modal-Sherr">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Sherr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">SHERRY PAUL<br><span class="speaker-credit-modal">CFP®, CIMA®, CRPC®, Senior Vice President, Private Wealth Advisor, UBS Wealth Management USA</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              With nearly two decades of experience as a financial professional, Sherry has built a strong reputation for delivering comprehensive wealth management to high net worth and ultra-high net worth clients. Sherry is a Senior Portfolio Manager, a designation awarded by UBS to a small group of the most experienced advisors. She has been named as <span class="speaker-bio-modal-it">Forbes'</span> Top 200 Women Wealth Advisors, is a former member of the UBS Financial Advisor Advisory Council, and currently sits on the Advisory Council for All Bar None, UBS’ Women’s Network. Additionally, Sherry serves on the boards of Invest In Girls, a non-profit that delivers financial literacy programs to high school girls, and The Warhawk Air Museum, a non-profit dedicated to honoring veterans for their service.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends SHERRY PAUL With Padding At The End -->
+<!--                                              -->
+
+
+<!-- This Begins SARAH PERSONETTE -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/SarahPersonettehires_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">SARAH PERSONETTE</span><br><span class="speaker-credit">Chief Operating Officer, Refinery29</span><br><br>
+          <span class="main-copy3">Since January 2018, Sarah has been the Chief Operating Officer of Refinery29, a global media and entertainment company for young women. She oversees revenue, business marketing, growth and analytics, distribution, and strategy and insights. Prior, she served as the Vice President of Facebook Inc.’s Global Business Marketing team, responsible for providing clients with innovative and effective marketing solutions for their businesses. </p><br><p><a data-toggle="modal" data-target="#modal-SarA">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-SarA" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">SARAH PERSONETTEL<br><span class="speaker-credit-modal">Chief Operating Officer, Refinery29</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Since January 2018, Sarah has been the Chief Operating Officer of Refinery29, a global media and entertainment company for young women. She oversees revenue, business marketing, growth and analytics, distribution, and strategy and insights. Prior, she served as the Vice President of Facebook Inc.’s Global Business Marketing team, responsible for providing clients with innovative and effective marketing solutions for their businesses. Previously, Sarah spent time with Universal McCann Worldwide, Inc. serving as US President. She also built and led Facebook’s Global Agency team, and prior - served as Senior Vice President at Starcom Mediavest Group.<br><br>
+
+              Sarah received the 2016 Next Generation of Women in Communications from NYWICI and was inducted into the American Advertising Federation’s Advertising Hall of Achievement in 2015. In 2014, she was named one of Advertising Age magazine’s top “40 Under 40” marketing stars.<br><br> 
+
+              She serves as a corporate director for Build-A-Bear Workshop (BBW) and is a director on the non-for-profit boards of She Runs It, Northwestern University’s Alumnae Association Board, and the Reisenbach Foundation.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends SARAH PERSONETTE With Padding At The End -->
+<!--                                              -->
+
+<!-- Place Holder for JANE ROSENTHAL -->
+<!-- Place Holder for JANE ROSENTHAL -->
+<!-- Place Holder for JANE ROSENTHAL -->
+<!-- Place Holder for JANE ROSENTHAL -->
+
+
+<!-- This Begins BONNIE TIMMERMANN -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/BonnieTimmerman_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">BONNIE TIMMERMANN</span><br><span class="speaker-credit">Producer and Casting Director</span><br><br>
+          <span class="main-copy3">Bonnie is a Producer and Casting Director with credits ranging from commercial hits to critically acclaimed independent films. Bonnie has cast more than 90 feature films and worked with Hollywood’s premiere directors. Known for having a great eye for young talent, Bonnie cast then unknowns Glenn Close and Meryl Streep in Wendy Wasserstein’s <span class="speaker-bio-modal-it">Uncommon Women</span> while at the Phoenix Repertory Company in New York. In addition, Bonnie has cast numerous actors in their breakthrough roles including Brad Pitt, Sean Penn, Liam Neeson, Julia Roberts, Scarlett Johansson and Benicio Del Toro. </p><br><p><a data-toggle="modal" data-target="#modal-Bonnie">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-Bonnie" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">BONNIE TIMMERMANN<br><span class="speaker-credit-modal">Producer and Casting Director</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Bonnie is a Producer and Casting Director with credits ranging from commercial hits to critically acclaimed independent films. Bonnie has cast more than 90 feature films and worked with Hollywood’s premiere directors. Known for having a great eye for young talent, Bonnie cast then unknowns Glenn Close and Meryl Streep in Wendy Wasserstein’s <span class="speaker-bio-modal-it">Uncommon Women</span> while at the Phoenix Repertory Company in New York in the early 1980s which was subsequently broadcast by PBS. In addition, Bonnie has cast numerous actors in their breakthrough roles including Brad Pitt, Sean Penn, Liam Neeson, Julia Roberts, Scarlett Johansson and Benicio Del Toro. Her casting and producing files have been archived by the Howard Gotlieb Archival Research Center at Boston University. Currently Bonnie is producing, along with Barbara Broccoli and Fed Zollo, the off-Broadway production of David Rabe’s <span class="speaker-bio-modal-it">Good for Otto</span> starring Ed Harris and Amy Madigan.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends SARAH PERSONETTE With Padding At The End -->
+<!--                                              -->
+
+
+<!-- This Begins LYNN YAEGER -->
+  <!--                          -->
+    <div id="series-start" class="container-musings">
+      <div class="musings-image">
+          <img width="250px" height="350px" src="img/headshots/LynnYaeger_cut.jpg">
+      </img> 
+
+    </div>
+    <div class="musings-copy">
+          <p><span class="speaker-main">LYNN YAEGER</span><br><span class="speaker-credit">Writer & Contributing Editor, Vogue and Vogue.com</span><br><br>
+          <span class="main-copy3">Lynn Yaeger writes about fashion, politics, culture, and travel for many publications, including <span class="speaker-bio-modal-it">Robb Report, BG Magazine, Travel & Leisure, The New York Times,</span> and <span class="speaker-bio-modal-it">Departures</span>. She is a contributing editor for <span class="speaker-bio-modal-it">Vogue</span> and vogue.com. Lynn lives in downtown Manhattan, and is an avid observer and recorder of the fashion scene.</p><br><p><a data-toggle="modal" data-target="#modal-LynN">READ MORE</a><span class="arrow">  &rarr;</span>
+          <!-- Button trigger modal -->
+          <!--<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Modal</button> -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-LynN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">LYNN YAEGER<br><span class="speaker-credit-modal">Writer & Contributing Editor, Vogue and Vogue.com</p>
+              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body"><span class="speaker-bio-modal">
+              Lynn Yaeger writes about fashion, politics, culture, and travel for many publications, including <span class="speaker-bio-modal-it">Robb Report, BG Magazine, Travel & Leisure, The New York Times,</span> and <span class="speaker-bio-modal-it">Departures</span>. She is a contributing editor for <span class="speaker-bio-modal-it">Vogue</span> and vogue.com. Lynn lives in downtown Manhattan, and is an avid observer and recorder of the fashion scene.</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-dismiss="modal">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- This Ends LYNN YAEGER With Padding At The End -->
+<!--                                              -->
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section> 
 
 
     <section id="ourpartners-start">
@@ -483,11 +1292,20 @@
     <div>
         <p class="title-copy">Special Thanks<br>To Our Partners</p>
     </div>
+    
+         <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad2"> 
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="partners-space">
-      <div class="logo-1"><img src="img/300x150.png"></div>
-      <div class="logo-2"><img src="img/300x150.png"></div>
-      <div class="logo-3"><img src="img/300x150.png"></div>
+      <div class="logo-1"><img width="200px" src="img/springplacelogo.png"></div>
+      <!-- <div class="logo-2"><img src="img/300x150.png"></div>
+      <div class="logo-3"><img src="img/300x150.png"></div> -->
     </div>
 
 
@@ -510,11 +1328,12 @@
     </section>
       
       <div class="footer-wrap">
-        <div class="center-me"><img src="img/mini-muse.png" width="20px"></div>
+        <!--<div class="center-me"><img src="img/mini-muse.png" width="20px"></div>-->
       </div>
       <div class="line"></div>
       <div class="container-footer" align="center">
-          <div class="footer-box"><span class="footer-main-italic">EVENTS@ROBBREPORT.COM<br></span><span class="footer-main-italic-lt">Privacy Policy<br>Your California Privacy Rights<br>Terms Of Use</span></div>
+          <div class="footer-box"><span class="footer-main-italic"><a href="mailto:events@robbreport.com?Subject=Tell me more about Musings">EVENTS@ROBBREPORT.COM</a><br></span><span class="footer-main-italic-lt"><a href="https://pmc.com/privacy-policy/">Privacy Policy</a><br><a href="https://pmc.com/privacy-policy/#california">Your California Privacy Rights</a><br><a href="https://pmc.com/terms-of-use/">Terms Of Use</a><br><br></span><span class="footer-main-light">© Copyright 2018 Robb Report Media, LLC, a subsidiary of Penske Media Corporation.<br> Robb Report is a trademark of Robb Report Media, LLC.</span></div>
+
       </div>
 
     <section>
@@ -542,47 +1361,12 @@
 
  <!-- Navigation Bar Script -->
 
- <script type="javascript">
- // Initial scroll position
-var scrollState = 0;
-
-// Store navbar classes
-var navClasses = document.getElementById('navBar').classList;
-
-// returns current scroll position
-var scrollTop = function() {
-  return window.scrollY;
-};
-
-// Primary scroll event function
-var scrollDetect = function(home, down, up) {
-  // Current scroll position
-  var currentScroll = scrollTop();
-  if (scrollTop() === 0) {
-    home();
-  } else if (currentScroll > scrollState) {
-    down();
+ <script>
+ $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
   } else {
-    up();
+    $('nav').removeClass('shrink');
   }
-  // Set previous scroll position
-  scrollState = scrollTop();
-};
-
-function homeAction() {
-  console.log("home");
-}
-
-function downAction() {
-  navClasses.remove('open');
-  navClasses.add('collapse');
-}
-
-function upAction() {
-  navClasses.remove('collapse');
-  navClasses.add('open');
-}
-
-window.addEventListener("scroll", function() {
-  scrollDetect(homeAction, downAction, upAction);
-});</script>
+});
+ </script>
