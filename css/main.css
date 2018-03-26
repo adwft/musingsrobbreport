@@ -758,7 +758,11 @@ a {
 @media (min-width: 700px) {
   .desktop-visible {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  #video4 {
+    display: none;
+    visibility: hidden; } }
 @media (min-width: 768px) {
   .container-2 {
     display: flex;
