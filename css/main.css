@@ -930,13 +930,20 @@ a {
   flex-wrap: wrap; }
 
 .logo-1 {
-  margin: 1em; }
+  margin: 1em;
+  padding: 20px; }
 
 .logo-2 {
-  margin: 1em; }
+  margin: 1em;
+  padding: 20px; }
 
 .logo-3 {
-  margin: 1em; }
+  margin: 1em;
+  padding: 20px; }
+
+.logo-4 {
+  margin: 1em;
+  padding: 20px; }
 
 /* original scss for speakers
 .container-speakers{
@@ -1005,6 +1012,9 @@ img.device {
 #video3 {
   display: none; }
 
+#video4 {
+  display: none; }
+
 /* Default to display the image on all devices */
 #videosubstitute {
   display: block;
@@ -1058,6 +1068,9 @@ html, body {
     display: block; }
 
   #video3 {
+    display: block; }
+
+  #video4 {
     display: block; }
 
   #videosubstitute {
