@@ -1014,15 +1014,23 @@ justify-content: space-between;
 }
 
 .logo-1 {
-  margin: 1em
+  margin: 1em;
+  padding: 20px;
 }
 
 .logo-2 {
-  margin: 1em
+  margin: 1em;
+  padding: 20px;
 }
 
 .logo-3 {
-  margin: 1em
+  margin: 1em;
+  padding: 20px;
+}
+
+.logo-4 {
+  margin: 1em;
+  padding: 20px;
 }
 
 /* original scss for speakers
@@ -1102,8 +1110,9 @@ img.device{
 
 // Video
  /* Default to hide the video on all devices */
-#video2{display:none}
-#video3{display:none}
+#video2{display:none;}
+#video3{display:none;}
+#video4{display:none;}
 
 /* Default to display the image on all devices */
 #videosubstitute{
@@ -1161,6 +1170,7 @@ html, body {
 @media only screen and (min-width : 600px) {
 #video2{display:block;}
 #video3{display:block;}
-#videosubstitute{display:none}
+#video4{display:block;}
+#videosubstitute{display:none;}
 }   
 
