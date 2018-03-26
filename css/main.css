@@ -761,8 +761,7 @@ a {
     margin: 0 auto; }
 
   #video4 {
-    display: none;
-    visibility: hidden; } }
+    display: none; } }
 @media (min-width: 768px) {
   .container-2 {
     display: flex;
